@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Toggle JavaScript",
+  "version": "1.0",
+  "description": "Toggle JavaScript enable/disable for the current site to help debug SSR/client component mixing.",
+  "permissions": ["contentSettings", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-javascript": {
+      "suggested_key": {
+        "default": "Ctrl+J"
+      },
+      "description": "Toggle JavaScript on/off for the current site"
+    }
+  }
+}
